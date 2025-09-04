@@ -37,7 +37,7 @@ const HeroSection = () => {
 
     heroTl.to(".hero-container", {
       rotate: 7,
-      scale: 0.9,
+      scale: 0.8,
       yPercent: 30,
       ease: "power1.inOut",
     });

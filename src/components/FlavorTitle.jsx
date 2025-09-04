@@ -39,7 +39,6 @@ const FlavorTitle = () => {
         trigger: ".flavor-section",
         start: "top 1%",
         toggleActions: "play none none reverse",
-        markers: true
       }
     })
   });

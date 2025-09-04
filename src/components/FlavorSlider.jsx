@@ -20,7 +20,23 @@ const FlavorSlider = () => {
     tl.to(".flavor-section", {
       x: `-${scrllAmout + 1150}px`,
       ease: "power1.inOut"
-    })
+    });
+
+    const titleTl = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".flavor-section",
+        start: "top top",
+        end: "bottom 80%",
+        scrub: true,
+      },
+    });
+
+    titleTl.to(".flavor-text-split", {
+      xPercent: -30,
+      ease: "power1.inOut"
+    }).to(".flavor-text-scroll", {
+      xPercent: -22,
+    }, "<");
   })
   return (
     <div ref={sliderRef} className="slider-wrapper">
@@ -33,17 +49,20 @@ const FlavorSlider = () => {
             <img
               src={`/images/${flavor.color}-bg.svg`}
               alt={flavor.color}
+              draggable={false}
               className="absolute bottom-0"
             />
             <img
               src={`/images/${flavor.color}-drink.webp`}
               alt={flavor.color}
               className="drinks"
+              draggable={false}
             />
             <img
               src={`/images/${flavor.color}-elements.webp`}
               alt={flavor.color}
               className="elements"
+              draggable={false}
             />
             <h1>{flavor.name}</h1>
           </div>

@@ -31,11 +31,15 @@ const FlavorSlider = () => {
       },
     });
 
-    titleTl.to(".flavor-text-split", {
+    titleTl.to(".first-text-split", {
       xPercent: -30,
       ease: "power1.inOut"
     }).to(".flavor-text-scroll", {
       xPercent: -22,
+      ease: "power1.inOut"
+    }, "<").to(".second-text-split", {
+      xPercent: -10,
+      ease: "power1.inOut"
     }, "<");
   })
   return (

@@ -216,7 +216,7 @@ body::-webkit-scrollbar {
       @apply md:h-[110vh] h-dvh overflow-hidden md:!-translate-y-[15%] md:mt-0 mt-20;
 
       video {
-        @apply size-full absolute inset-0 object-cover;
+        @apply size-full absolute inset-0 object-cover pointer-events-none;
       }
 
       .play-btn {
@@ -233,15 +233,15 @@ body::-webkit-scrollbar {
     @apply bg-milk relative w-full h-[120dvh];
 
     .pin-box {
-      @apply flex items-center justify-center w-full ps-52 absolute 2xl:bottom-32 bottom-[50vh];
+      @apply flex items-center justify-center w-full ps-52 absolute lg:bottom-32 bottom-[50vh];
 
       .vd-card {
-        @apply md:w-96 w-80 flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden 2xl:relative absolute border-[.5vw] border-milk;
+        @apply  w-80 flex-none md:rounded-[2vw] rounded-3xl -ms-44 overflow-hidden lg:relative absolute border-[.5vw] border-milk;
       }
     }
 
     h1 {
-      @apply uppercase text-[20.5vw] leading-[105%] tracking-[-.4vw] ml-[2vw] font-bold;
+      @apply uppercase lg:text-[14.5vw] text-[20.5vw] leading-[105%] tracking-[-.4vw] ml-[2vw] font-bold;
     }
   }
 

@@ -29,7 +29,7 @@ const App = () => {
           <FlavorSection />
           <NutritionSection />
 
-          <div className="">
+          <div>
             <BenefitSection />
             <TestimonialSection />
           </div>

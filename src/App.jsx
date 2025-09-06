@@ -8,6 +8,7 @@ import { useGSAP } from "@gsap/react";
 import NutritionSection from "./sections/NutritionSection";
 import BenefitSection from "./sections/BenefitSection";
 import TestimonialSection from "./sections/TestimonialSection";
+import FooterSection from "./sections/FooterSection";
 
 gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 const App = () => {
@@ -22,15 +23,19 @@ const App = () => {
       <Navbar />
       <div id="smooth-wrapper">
         <div id="smooth-content">
+
           <HeroSection />
           <MessageSection />
           <FlavorSection />
-          <NutritionSection/>
+          <NutritionSection />
+
           <div className="">
-          <BenefitSection/>
-          <TestimonialSection/>
+            <BenefitSection />
+            <TestimonialSection />
           </div>
-          <div className="h-screen"></div>
+
+          <FooterSection />
+          
         </div>
       </div>
     </main>
